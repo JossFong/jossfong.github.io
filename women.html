@@ -17,7 +17,7 @@ $(function () {
                 plotBorderWidth: 0,
             },
             title: {
-                text: 'Share of Bachelor\'s degrees earned by women (%)',
+                text: 'Share of bachelor\'s degrees earned by women (%)',
                 x: -25
             },
             
@@ -124,9 +124,12 @@ $(function () {
                 marginRight: 40
             },
             title: {
-                text: 'Rate of change in the share of Bachelor\'s degrees earned by women',
+                text: 'Rate of change in the share of bachelor\'s degrees earned by women',
                 x: -25,
-                y: 200
+                y: 120,
+                style: {
+                    fontSize: '16px'
+                }
             },
             xAxis: {
                 categories: ['1980-1985', '1985-1990', '1990-1995', '1995-2000', '2000-2005', '2005-2010'],
@@ -172,11 +175,12 @@ $(function () {
         },
 
             legend: {
-                layout: 'vertical',
+                layout: 'horizontal',
                 verticalAlign: 'top',
                 borderWidth: 0,
-                x: -205,
-                y: 25
+                itemWidth: 190,
+                x: -10,
+                y: 22
             },
 
             series: [{
@@ -221,19 +225,19 @@ $(function () {
         <script src="highcharts/js/highcharts.js"></script>
         <script src="highcharts/js/modules/exporting.js"></script>
 
-        <div id="intro" style="width: 1050px; margin:auto;">
+        <div id="intro" style="width: 1035px; margin:auto;">
 
         <h1 style="color: #003366; align: center; margin-bottom: 5px; font-family:palatino;">Momentum slows for women entering science</h1>
 
 
         <div id="text">
-        <p style="font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;font-size: small;">After increasing steadily since the 1960s, the percentage of undergraduate science degrees earned by women has fallen in recent years. This pattern holds not only for those fields where women are nearing or have passed the 50% mark, but also fields where around 4 out of 5 graduates are male. A notable outlier is computer science, where women have been losing ground much longer, since the 1980's.</p></div>
+        <p style="font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;font-size: small;">After increasing steadily since the 1960s, the percentage of undergraduate science degrees earned by women has fallen in recent years. This pattern holds not only for those fields where women are nearing or have passed the 50% mark, but also fields where still around 4 out of 5 graduates are male. A notable outlier is computer science, where women have been losing ground much longer, since the 1980's.</p></div>
         </div>
 
         <div id="charts" style="width: 1100px; margin: auto;">
-        <div id="container" style="width: 500px; height: 500px; float:left;"></div>
+        <div id="container" style="width: 500px; height: 450px; float:left;"></div>
 
-        <div id="container2" style="width: 600px; height: 515px; float: left;"></div>
+        <div id="container2" style="width: 600px; height: 465px; float: left;"></div>
     </div>
 
 	</body>
