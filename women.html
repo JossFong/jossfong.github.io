@@ -11,7 +11,7 @@ $(function () {
             chart: {
                 renderTo: 'container',
                 type: 'line',
-                plotBackgroundColor: '#EBE6E0',
+                plotBackgroundColor: '#FDFAF3',
                 marginRight: 0,
                 marginBottom: 25,
                 plotBorderWidth: 0,
@@ -27,7 +27,12 @@ $(function () {
                     tickInterval:29,
                 labels: {
                     overflow: 'justify'
-                }
+                },
+                plotBands: [{
+                    color: '#E0E0E0',
+                    from: 24, 
+                    to: 30
+                }]
             },
 
             yAxis: {
@@ -114,7 +119,7 @@ $(function () {
             chart: {
                 renderTo: 'container2',
                 type: 'column',
-                plotBackgroundColor: '#EBE6E0',
+                plotBackgroundColor: '#FDFAF3',
                 marginBottom: 40,
                 marginRight: 40
             },
@@ -125,8 +130,14 @@ $(function () {
             },
             xAxis: {
                 categories: ['1980-1985', '1985-1990', '1990-1995', '1995-2000', '2000-2005', '2005-2010'],
-                gridLineWidth: 1
+                gridLineWidth: 1,
+                 plotBands: [{
+                    color: '#E0E0E0',
+                    from: 4.5, 
+                    to: 5.5
+                }]
             },
+
             yAxis: {
                 gridLineWidth: 0,
                 title: {
@@ -216,7 +227,7 @@ $(function () {
 
 
         <div id="text">
-        <p style="font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;font-size: small;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p></div>
+        <p style="font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;font-size: small;">After increasing steadily since the 1960s, the percentage of undergraduate science degrees earned by women has fallen in recent years. This pattern holds not only for those fields where women are nearing or have passed the 50% mark, but also fields where around 4 out of 5 graduates are male. A notable outlier is computer science, where women have been losing ground much longer, since the 1980's.</p></div>
         </div>
 
         <div id="charts" style="width: 1100px; margin: auto;">
