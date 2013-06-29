@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Women Entering Science</title>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script type="text/javascript">
+$(function () {
+        $('#container').highcharts({
+            chart: {
+                renderTo: 'container',
+                type: 'line',
+                plotBackgroundColor: '#E9F0DB',
+                marginRight: 0,
+                marginBottom: 25,
+                plotBorderWidth: 0,
+            },
+            title: {
+                text: 'Share of Bachelor\'s degrees earned by women (%)',
+                x: -25
+            },
+            
+            xAxis: {
+                categories: ['1980', '1981', '1982', '1983', '1984', '1985',
+                    '1986', '1987', '1988', '1989', '1990', '1991', '1992', '1993', '1994', '1995', '1996', '1997', '1998', '2000', '2001', '2002', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010'],
+                    tickInterval:29,
+                labels: {
+                    overflow: 'justify'
+                }
+            },
+
+            yAxis: {
+                title: {
+                    text: ''
+                },
+                plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: '#808080'
+                }]
+            },
+
+            plotOptions: {
+            series: {
+                marker: {
+                    radius: 3,
+                    symbol: 'circle'
+                }}
+            },
+
+            exporting: {
+                enabled: false
+            },
+
+            credits: {
+                text: 'Source: National Science Foundation',
+                href: 'http://www.nsf.gov/statistics/',
+                position: {
+                    align: 'left',
+                    x: 35,
+                    y: -30
+                }
+            },
+
+            tooltip: {
+                valueSuffix: '%'
+            },
+
+            legend: {
+                enabled: 'false',
+                y: 100
+            },
+
+            series: [{
+                name: 'Biological Sciences',
+                data: [42.4,44.5,45.6,46.4,47.2,48.1,48.4,48.7,50.6,50.5,51.0,51.1,51.9,51.8,51.6,52.6,52.9,54.1,55.3,58.5,59.7,61.0,62.2,62.4,62.2,61.7,60.5,59.8,59.7,59.0]
+            },{
+                name: 'Mathematics',
+                data: [42.3,42.8,43.2,43.8,44.3,46.1,46.5,46.5,46.4,46.0,46.4,47.2,46.8,47.1,46.3,46.9,45.8,46.3,46.8,47.8,48.0,46.9,45.6,45.9,44.6,44.9,43.9,43.9,43.0,43.1]
+            },{
+                name: 'Chemistry',
+                data: [28.6,30.1,31.9,33.8,35.1,36.4,36.3,37.4,39.9,38.9,40.1,40.4,40.7,41.1,41.2,42.3,43.1,44.7,45.7,47.2,48.6,50.0,50.2,51.1,51.8,51.7,49.9,49.9,50.3,49.9]
+            },{
+                name: 'Agricultural Science',
+                data: [29.9, 31.9, 32.8, 36.6, 35.8, 35.0, 35.1, 35.6, 35.7, 35.2, 35.6, 37.2, 38.3, 37.3, 38.2, 38.7, 39.7, 41.9, 43.1, 46.4, 48.6, 49.7, 50.6, 51.1, 51.0, 51.5, 50.4, 51.2, 51.3, 52.5]
+            },{
+                name: 'Earth and Ocean Sciences',
+                data: [24.5,25.4,26.2,25.8,24.7,25.0,22.6,23.0,24.6,26.3,29.0,30.6,33.8,31.5,32.5,35.7,34.8,36.2,38.6,42.3,42.4,44.8,43.5,43.4,43.2,42.8,42.5,41.7,40.1,40.2]
+            },{
+                name: 'Astronomy',
+                data: [19.7,20.2,18.6,25.0,21.1,25.2,15.4,17.7,15.1,22.6,30.7,25.8,29.7,28.1,28.2,30.8,37.2,32.9,34.5,33.8,39.6,42.0,40.6,42.1,43.2,35.8,39.8,34.7,43.6,36.1]
+            },{
+                name: 'Computer Sciences',
+                data: [30.3,32.5,34.8,36.4,37.2,36.9,35.8,34.8,32.5,30.8,30.2,29.6,28.9,28.3,28.6,28.5,27.6,27.2,26.9,28.0,27.6,27.5,27.0,25.1,22.3,20.7,18.6,17.7,17.9,18.2]
+            },{
+                name: 'Engineering',
+                data: [10.1,11.1,12.3,13.3,14.1,14.5,14.5,15.3,15.4,15.2,15.4,15.5,15.6,15.9,16.5,17.3,17.9,18.4,18.6,20.5,20.1,20.9,20.3,20.5,20.0,19.5,18.5,18.5,18.1,18.]
+            },{
+                name: 'Atmospheric Sciences',
+                data: [11.4,15.9,16.0,16.7,20.5,16.4,16.6,17.7,16.4,15.8,20.6,15.8,19.7,17.3,18.8,18.5,19.8,19.3,23.5,23.3,28.9,28.8,31.3,35.5,35.6,33.6,35.2,35.7,32.6,34.2]
+            },{
+                name: 'Physics',
+                data: [12.8,12.6,13.3,12.7,14.3,13.6,14.6,16.1,14.9,14.8,16.2,15.8,16.4,16.6,17.7,17.6,18.5,19.2,19.3,21.5,21.9,22.6,21.4,21.9,21.4,20.7,21.0,20.3,19.1,20.3]
+            }]
+        });
+    });
+    
+
+		</script>
+        <script type="text/javascript">
+$(function () {
+        $('#container2').highcharts({
+            chart: {
+                renderTo: 'container2',
+                type: 'column',
+                plotBackgroundColor: '#E9F0DB',
+                marginBottom: 40,
+                marginRight: 40
+            },
+            title: {
+                text: 'Rate of change in the share of Bachelor\'s degrees earned by women',
+                x: -25,
+                y: 200
+            },
+            xAxis: {
+                categories: ['1980-1985', '1985-1990', '1990-1995', '1995-2000', '2000-2005', '2005-2010'],
+                gridLineWidth: 1
+            },
+            yAxis: {
+                gridLineWidth: 0,
+                title: {
+                    text: '',
+                },
+                labels: {
+                    align: 'left',
+                        x: 555}
+            },
+
+            plotOptions: {
+            series: {
+                pointWidth: 7,
+                groupPadding: .05,
+                borderWidth: 0,
+                events: {
+                    legendItemClick: false
+                    }
+            }
+        },
+            credits: {
+                text: 'Source: National Science Foundation',
+                href: 'http://www.nsf.gov/statistics/',
+                position: {
+                    align: 'left',
+                    x: 15,
+                    y: -45}
+            },
+
+            exporting: {
+                enabled: false
+        },
+
+            legend: {
+                layout: 'vertical',
+                verticalAlign: 'top',
+                borderWidth: 0,
+                x: -205,
+                y: 25
+            },
+
+            series: [{
+                name: 'Biological Sciences',
+                data: [.011,.006,.003,.012,.007,-.006]
+            }, {
+                name: 'Mathematics',
+                data: [.008,.001,.001,.002,-.006,-.003]
+            }, {
+                name: 'Chemistry',
+                data: [.016,.007,.004,.010,.009,-.004]
+            },{
+                name: 'Agricultural Science',
+                data: [.010,.001,.006,.015,.009,.003]
+            },{
+                name: 'Earth and Ocean Sciences',
+                data: [.001,.008,.013,.013,.002,-.006]
+            },{
+                name: 'Astronomy',
+                data: [.011,.011,.000,.006,.019,-.014]
+            }, {
+                name: 'Computer Sciences',
+                data: [.013,-.013,-.003,-.001,-.011,-.008]
+            },{
+                name: 'Engineering',
+                data: [.009,.002,.004,.006,-.001,-.003]
+            },{
+                name: 'Atmospheric Sciences',
+                data: [.010,.008,-.004,.010,.025,-.003]
+            },{
+                name: 'Physics',
+                data: [.002,.005,.003,.008,.000,-.002]
+            }]
+        });
+    });
+
+        </script>
+        <style>
+        </style>
+	</head>
+	<body>
+        <script src="highcharts/js/highcharts.js"></script>
+        <script src="highcharts/js/modules/exporting.js"></script>
+
+        <div id="intro" style="width: 1050px; margin:auto;">
+
+        <h1 style="color: #003366; align: center; margin-bottom: 5px; font-family:palatino;">Momentum slows for women entering science</h1>
+
+
+        <div id="text">
+        <p style="font-family:Lucida Sans Unicode, Lucida Grande, sans-serif;font-size: small;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p></div>
+        </div>
+
+        <div id="charts" style="width: 1100px; margin: auto;">
+        <div id="container" style="width: 500px; height: 500px; float:left;"></div>
+
+        <div id="container2" style="width: 600px; height: 515px; float: left;"></div>
+    </div>
+
+	</body>
+</html>
